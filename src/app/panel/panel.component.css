@@ -1,0 +1,36 @@
+.wrap a,
+.score,
+.title,
+.description {
+  padding: inherit;
+  transition: 0.5s;
+}
+.wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 3%;
+}
+.wrap a {
+  text-decoration: none;
+  border: 2px solid gray;
+  aspect-ratio: 16/9;
+  padding: 20px;
+  margin: 20px;
+}
+.title {
+  font-size: xx-large;
+}
+.score,
+.description {
+  font-size: x-large;
+  color: gray;
+}
+.green {
+  color: rgb(16, 148, 16);
+}
+.red {
+  color: red;
+}
+.wrap a:hover {
+  padding: 40px;
+}

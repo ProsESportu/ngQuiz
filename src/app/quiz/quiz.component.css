@@ -1,0 +1,23 @@
+.highlited{
+    color: red;
+    text-decoration: underline;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+}
+.num{
+    font-size: 900%;
+}
+p{
+    font-size: xx-large;
+}
+button{
+    font-size: xx-large;
+    color: black;
+}
+.button{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}

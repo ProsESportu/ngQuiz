@@ -1,0 +1,22 @@
+.title{
+    font-size: xx-large;
+    text-align: center;
+}
+div{
+    background-color: green;
+    width: 100vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.score{
+    background-color: inherit;
+    font-size: xx-large;
+}
+.green{
+    background-color: green;
+}
+.red{
+    background-color: red;
+}

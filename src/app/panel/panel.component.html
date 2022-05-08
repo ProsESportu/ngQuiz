@@ -1,0 +1,14 @@
+<div class="wrap">
+  <a *ngFor="let button of buttons;let i=index" routerLink="/quiz/{{i}}">
+    <div class="title">{{button.name}}</div>
+    <div class="description">{{button.description}}</div>
+  </a>
+</div>
+<hr>
+<div class="wrap">
+  <a *ngFor="let score of score.scores;let i =index" routerLink="/score/{{i}}">
+    <div class="title">{{score.name}}</div>
+    <div class="score" *ngIf="score.score"
+     [ngClass]="score.score>=50?'green':'red'">{{score.score}}%</div>
+  </a>
+</div>

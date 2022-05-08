@@ -1,0 +1,11 @@
+<div class="nav">
+    <div *ngFor="let q_a of q_a;let i=index" class="num"
+     [ngClass]="{'highlited':i===currentQuestion}">{{i}}</div>
+</div>
+<p>{{q_a[currentQuestion].question}}</p>
+
+<div class="button">
+    <button *ngFor="let answear of q_a[currentQuestion].answears;let i =index"
+    (click)="clickHandle(i)" style="background-color: {{colours[i]}};"
+    >{{answear}}</button>
+</div>
