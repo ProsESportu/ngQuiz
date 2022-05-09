@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
@@ -8,7 +8,7 @@ import { PanelComponent } from './panel/panel.component';
 import { ScoreShowComponent } from './score-show/score-show.component';
 import { ScoreService } from "./score.service";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { HttpClientModule } from "@angular/common/http";
 
 const appRoutes:Routes=[
   {path:"quiz/:id",component:QuizComponent},
@@ -26,6 +26,7 @@ const appRoutes:Routes=[
   imports: [
     RouterModule.forRoot(appRoutes,{enableTracing:true}),
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
   ],

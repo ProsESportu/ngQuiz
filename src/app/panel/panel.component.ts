@@ -8,7 +8,15 @@ import { ScoreService } from '../score.service';
   styleUrls: ['./panel.component.css'],
 })
 export class PanelComponent implements OnInit {
-  constructor(public score:ScoreService,public button:ButtonService) {}
-  ngOnInit(): void {}
-  buttons=this.button.buttons
+  constructor(
+    public score: ScoreService,
+    public button: ButtonService,
+
+  ) {}
+  ngOnInit(): void {
+    this.button.refresh();
+  }
+  buttons = this.button.buttons;
+
+  
 }
